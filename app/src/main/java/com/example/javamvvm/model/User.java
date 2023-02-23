@@ -1,9 +1,13 @@
 package com.example.javamvvm.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class User {
     private Integer id;
     private String email;
+    @SerializedName("first_name")
     private String firstName;
+    @SerializedName("last_name")
     private String lastName;
     private String avatar;
     public Integer getId() {
